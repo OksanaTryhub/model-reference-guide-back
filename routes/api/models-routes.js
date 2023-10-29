@@ -8,12 +8,12 @@ const router = express.Router();
 
 router.get("/", ctrl.getAllModels);
 
-router.get("/:id", ctrl.getModelById);
+// router.get("/:id", ctrl.getModelById);
 
-router.post("/", validateBody(schemas.addSchema), ctrl.addModel);
+// router.post("/", validateBody(schemas.addSchema), ctrl.addModel);
 
-router.put("/:id", validateBody(schemas.addSchema), ctrl.updateModelById);
+// router.put("/:id", validateBody(schemas.addSchema), ctrl.updateModelById);
 
-router.delete("/:id", ctrl.deleteModelById);
+// router.delete("/:id", ctrl.deleteModelById);
 
 module.exports = router;
