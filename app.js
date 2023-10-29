@@ -4,9 +4,11 @@ require("dotenv").config();
 
 const modelsRoutes = require("./routes/api/models-routes");
 const app = express();
+
+app.use(cors());
 // const corsMiddleware = cors();
 // app.use(corsMiddleware);
-app.use(cors());
+
 app.use(express.json());
 
 app.use("/api/models", modelsRoutes);
